@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
+  <title>COVID-19 Tracker</title>
+</head>
+
+  <body class="background_col">
+    <div class="container center">
+      <div class="card dark_col top_card">
+      <div class="card-body">
+      <h4 class="card-title top center" >COVID-19 Live Tracker</h4>
+      </div>
+      </div>
+      <h4 class="center">Government aided resources</h4>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Select State
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" onclick="mh()">Maharashtra</a>
+          <a class="dropdown-item" onclick="dl()">Delhi</a>
+          <a class="dropdown-item" onclick="tn()">Tamil Nadu</a>
+          <a class="dropdown-item" onclick="rj()">Rajasthan</a>
+          <a class="dropdown-item" onclick="mp()">Madhya Pradesh</a>
+          <a class="dropdown-item" onclick="tg()">Telangana</a>
+          <a class="dropdown-item" onclick="gj()">Gujrat</a>
+          <a class="dropdown-item" onclick="up()">Uttar Pradesh</a>
+          <a class="dropdown-item" onclick="ap()">Andhra Pradesh</a>
+          <a class="dropdown-item" onclick="kl()">Kerala</a>
+          <a class="dropdown-item" onclick="jk()">Jammu & Kashmir</a>
+          <a class="dropdown-item" onclick="ka()">Karnataka</a>
+          <a class="dropdown-item" onclick="hr()">Haryana</a>
+          <a class="dropdown-item" onclick="wb()">West Bengal</a>
+          <a class="dropdown-item" onclick="pb()">Punjab</a>
+          <a class="dropdown-item" onclick="br()">Bihar</a>
+          <a class="dropdown-item" onclick="jh()">Jharkhand</a>
+          <a class="dropdown-item" onclick="an()">Andaman & Nicobar</a>
+          <a class="dropdown-item" onclick="cn()">Chandigarh</a>
+          <a class="dropdown-item" onclick="cg()">Chhattisgarh</a>
+          <a class="dropdown-item" onclick="go()">Goa</a>
+        </div>
+      </div>
+      <h4>Refine your search by city name: </h4>
+      <input type="text" name="state_text" value="" id="input_text">
+      <button class="btn-primary" type="button" name="button" onclick="lol()">Filter</button>
+      <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">City</th>
+      <th scope="col">Category</th>
+      <th scope="col">Contact</th>
+      <th scope="col">Phone Number</th>
+    </tr>
+  </thead>
+  <tbody id="myTable">
+  </tbody>
+  </table>
+<br><br>
+    </div>
+      <script src="js/gov_resources.js" charset="utf-8"></script>
+    </body>
+</html>
